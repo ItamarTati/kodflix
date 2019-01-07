@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import goWild from './images/GoWild.jpeg';
-import infected from './images/Infected.jpg';
-import letTheMusicGetDownInYourSoul from './images/LetTheMusicGetDownInYourSoul.jpg';
-//import priest from './images/Priest.jpg';
-//import theRain from './images/TheRain.jpg';
-//import theWalkingDead from './images/TheWalkingDead';
+//import gowild from './Images/gowild.jpeg/'
+
 
 import './App.css';
 
@@ -13,21 +9,22 @@ class App extends Component {
     return (
       <div className="App">
       <br /><br /><br />
-      <div> className='container'>
-        <div className='item'>
-          <img src={goWild} alt='Go Wild' />
-        </div>
-        <div className='item'>
-          <img src={infected} alt='Infected' />
-        </div>
-      <div className='item'>
-      <img src={letTheMusicGetDownInYourSoul} alt='Let The Music Get Down In Your Soul' />
-    </div>
-    </div>
-        
-
-
+      <div className = 'container' >
+        <div className = 'item'>Go Wild</div>
+        <div className = 'item'>Infected</div>
+        <div className = 'item'>The Blenders</div>
+      </div> 
+      <div className = 'container' >
+        <div className = 'item'>The Rain</div>
+        <div className = 'item'>Priest</div>
+        <div className = 'item'>Walking Dead</div>
       </div>
+
+
+    </div>
+
+
+      
     );
   }
 }
