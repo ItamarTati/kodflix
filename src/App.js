@@ -1,18 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import goWild from './images/GoWild.jpeg';
+import infected from './images/Infected.jpg';
+import letTheMusicGetDownInYourSoul from './images/LetTheMusicGetDownInYourSoul.jpg';
+//import priest from './images/Priest.jpg';
+//import theRain from './images/TheRain.jpg';
+//import theWalkingDead from './images/TheWalkingDead';
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Hello, welcome to Kodflix</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <br /><br /><br />
+      <div> className='container'>
+        <div className='item'>
+          <img src={goWild} alt='Go Wild' />
+        </div>
+        <div className='item'>
+          <img src={infected} alt='Infected' />
+        </div>
+      <div className='item'>
+      <img src={letTheMusicGetDownInYourSoul} alt='Let The Music Get Down In Your Soul' />
+    </div>
+    </div>
+        
+
+
       </div>
     );
   }
