@@ -19,14 +19,17 @@ class App extends Component {
         
         <div className = 'item'>
           <img src={cowboyBebop} alt='Cowboy Bebop'/>
+            <h2>Cowboy Bebop</h2>
         </div>
         
         <div className = 'item'>
-          <img src={dragonBall} alt='Dragon Ball Z'/>
+          <img src={dragonBall} alt='Dragon Ball'/>
+            <h2>Dragon Ball</h2>
         </div>
         
         <div className = 'item'>
           <img src={eva} alt='Neon Genesis Evangelian'/>
+            <h2>Neon Genesis Evangelian</h2>
         </div>
         
           </div>             
@@ -35,14 +38,17 @@ class App extends Component {
         
         <div className = 'item'>
           <img src={ruruoniKenshin} alt='Ruruoni Kenshin'/>
+            <h2>Ruruoni Kenshin</h2>
         </div>
         
         <div className = 'item'>
           <img src={schoolRumble} alt='School Rumble'/>
+            <h2>School Rumble</h2>
         </div>
         
         <div className = 'item'>
           <img src={yuYuHakusho} alt='Yu Yu Hakusho'/>
+            <h2>Yu Yu Hakusho</h2>
         </div>
         
         </div>
