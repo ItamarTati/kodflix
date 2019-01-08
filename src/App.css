@@ -7,8 +7,33 @@
 }
 
 .item {
-  flex: 1;
-  padding: 30px;
+  flex: 1; 
+  border: 1px solid rgb(14, 27, 14); 
+  position: relative;
+
+}
+
+/*flex: 1;
+padding: 30px;
+border: 1px solid rgb(14, 27, 14); 
+position: relative;
+width: 250px;  
+object-fit: cover;*/
+
+
+
+.overlay{
+  display: none; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  background-color: green;
+  opacity: .5;  
+}
+
+.item:hover .overlay {
+  display: block; 
 }
 
 @media only screen and (max-width: 600px){
@@ -19,9 +44,9 @@
 
 img {
   border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 250px;
+  border-radius: 0px;
+  padding: 0px;
+  max-width: 100%;
 }
 h1 { 
   display: block;
