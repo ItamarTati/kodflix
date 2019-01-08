@@ -10,30 +10,25 @@
   flex: 1; 
   border: 0px solid rgb(14, 27, 14); 
   position: relative;
+  overflow: hidden; 
 
 }
-
-/*flex: 1;
-padding: 30px;
-border: 1px solid rgb(14, 27, 14); 
-position: relative;
-width: 250px;  
-object-fit: cover;*/
-
 
 
 .overlay{
-  display: none; 
+  transition: bottom ease 1s; 
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   width: 100%; 
   background-color: green;
-  opacity: .5;  
+  opacity: .6;
+  background-color: green;   
 }
 
 .item:hover .overlay {
-  display: block; 
+  opacity: .6;
+  bottom: 0; 
 }
 
 @media only screen and (max-width: 600px){
