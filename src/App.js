@@ -14,7 +14,7 @@ class App extends Component {
         <h1>Kodflix (Anime Divison)</h1>
         <br /><br /><br />
         <Route exact path='/' component={Technologies} /> 
-        <Route exact path='/details' component={Details} />
+        <Route exact path='/:details' component={Details} />
       
       </div>
       </Router>
