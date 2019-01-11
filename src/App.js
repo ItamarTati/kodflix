@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Stack from './Stack'
 import cowboyBebop from './images/cowboybebop.jpg';
 import dragonBall from './images/dragonball.jpg';
 import eva from './images/eva.jpg';
@@ -17,52 +18,18 @@ class App extends Component {
       
         <div className = 'container'>
           
-          <div className = 'item'>
-            <img src={cowboyBebop} alt='Cowboy Bebop'/>
-              <div className = 'overlay'>
-                <h2>Cowboy Bebop</h2>
-              </div>
-          </div>
-        
-          <div className = 'item'>
-            <img src={dragonBall} alt='Dragon Ball'/>
-              <div className = 'overlay'>
-                <h2>Dragon Ball</h2>
-              </div>
-          </div>
-        
-          <div className = 'item'>
-            <img src={eva} alt='Neon Genesis Evangelian'/>
-              <div className = 'overlay'> 
-                <h2>Neon Genesis Evangelian</h2>
-              </div>
-          </div>
+          <Stack name='Cowboy Bebop' logo={cowboyBebop}/>
+          <Stack name='Dragon Ball' logo={dragonBall}/>
+          <Stack name='Neon Genesis Evangelian' logo={eva}/>
         
         </div> 
                      
       
       <div className = 'container'>
         
-        <div className = 'item'>
-          <img src={ruruoniKenshin} alt='Ruruoni Kenshin'/>
-            <div className = 'overlay'>
-              <h2>Ruruoni Kenshin</h2>
-            </div>
-        </div>
-        
-        <div className = 'item'>
-          <img src={schoolRumble} alt='School Rumble'/>
-            <div className = 'overlay'>
-              <h2>School Rumble</h2>
-            </div>
-        </div>
-        
-        <div className = 'item'>
-          <img src={yuYuHakusho} alt='Yu Yu Hakusho'/>
-            <div className = 'overlay'>
-              <h2>Yu Yu Hakusho</h2>
-            </div> 
-        </div>
+      <Stack name='Ruruoni Kenshin' logo={ruruoniKenshin}/>
+      <Stack name='School Rumble' logo={schoolRumble}/>
+      <Stack name='Yu Yu Hakusho' logo={yuYuHakusho}/>
         
       </div>
     </div>
@@ -70,5 +37,7 @@ class App extends Component {
     );
   }
 }
+
+
 
 export default App;
