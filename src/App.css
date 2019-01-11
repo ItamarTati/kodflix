@@ -3,15 +3,19 @@
 }
 
 .container {
-  display: flex; 
+  /*display: flex; 
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .item {
   flex: 1; 
+  flex-basis: 350px;
   border: 0px solid rgb(14, 27, 14); 
   position: relative;
   overflow: hidden; 
-
+  
 }
 
 
@@ -31,11 +35,11 @@
   bottom: 0; 
 }
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
 .container {
   flex-direction: column; 
 } 
-}
+}*/
 
 img {
   border: 1px solid #ddd;

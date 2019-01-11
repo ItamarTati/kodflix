@@ -15,8 +15,6 @@ export default function Technologies() {
                 <Stack id='cowboybebop' name='Cowboy Bebop' logo={cowboyBebop}/>
                 <Stack id='dragonball' name='Dragon Ball' logo={dragonBall}/>
                 <Stack id='neongenesisevangelion' name='Neon Genesis Evangelian' logo={eva}/>
-            </div> 
-            <div className = 'container'>
                 <Stack id='ruruonikenshin' name='Ruruoni Kenshin' logo={ruruoniKenshin}/>
                 <Stack id='schoolrumble' name='School Rumble' logo={schoolRumble}/>
                 <Stack id='yuyuhakusho' name='Yu Yu Hakusho' logo={yuYuHakusho}/>
