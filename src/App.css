@@ -25,9 +25,8 @@
   bottom: -100px;
   left: 0;
   width: 100%; 
-  background-color: green;
-  opacity: .6;
-  background-color: green;   
+  background-color: white;
+  opacity: .6; 
 }
 
 .item:hover .overlay {
@@ -42,7 +41,7 @@
 }
 
 img {
-  border: 1px solid #ddd;
+  border: 1px solid black;
   border-radius: 4px;
   padding: 5px;
   max-width: 95%;
@@ -65,10 +64,11 @@ h2 {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  color: black;
 }
 
 body {
-    background: lightblue;
+    background: white;
   
 }
 
