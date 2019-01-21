@@ -2,7 +2,7 @@ import React, {
     Component
 } from 'react'
 import {
-    Link
+    Link, Redirect 
 } from 'react-router-dom';
 import getTechnologies from './getTechnologies'
 
@@ -28,6 +28,11 @@ export default class Details extends Component {
     }
 
     render() {
+        if(this.state.technology === undefined){
+            return <Redirect to='/not-found' />;
+        }
+        else {
+
         return ( 
         <div>
             <h1> {
@@ -35,6 +40,7 @@ export default class Details extends Component {
                 } 
                 </h1> <Link to = '/' > Back to home page </Link> 
         </div>
-        );
+            );
+        }
     }
 }
