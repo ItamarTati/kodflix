@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Technologies from './Technologies';
-import Details from './Details';
+import Details from './Details/Details.js';
 import NotFound from './NotFound';
 
 

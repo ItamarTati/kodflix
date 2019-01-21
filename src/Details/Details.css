@@ -1,0 +1,25 @@
+.Details .content{
+    display: flex; 
+}
+
+.image {
+    width: 60%;
+    height: 80%  
+}
+
+.Details .content .text,
+.Details .content .image {
+    padding: 15px
+}
+
+.link{
+    position: fixed; 
+    bottom: 0pt; 
+    right: 0pt;
+}
+
+@media only screen and (max-width: 600px) {
+    .Details .content {
+        display: flex;
+    }
+}

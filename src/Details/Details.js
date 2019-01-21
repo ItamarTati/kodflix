@@ -4,7 +4,8 @@ import React, {
 import {
     Link, Redirect 
 } from 'react-router-dom';
-import getTechnologies from './getTechnologies'
+import getTechnologies from '../getTechnologies'
+import './Details.css';
 
 export default class Details extends Component {
 
@@ -34,11 +35,20 @@ export default class Details extends Component {
         else {
 
         return ( 
-        <div>
-            <h1> {
-                this.state.technology.name
-                } 
-                </h1> <Link to = '/' > Back to home page </Link> 
+        <div className = 'Details'>
+            <h1>{this.state.technology.name}</h1> 
+            
+                <div className='content'>
+                <div className='text'> 
+                    {this.state.technology.details}</div> 
+                <img
+                    className = 'image' 
+                    src={this.state.technology.logo}
+                    alt={this.state.technology.name} /> 
+                <div className='link'>
+                <Link to = '/' >Back to home page </Link> 
+                </div>
+                </div>
         </div>
             );
         }
