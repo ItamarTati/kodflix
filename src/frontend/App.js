@@ -7,6 +7,13 @@ import NotFound from './NotFound';
 
 import './App.css';
 
+  fetch('/rest/shows')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+  })
+  
+
 class App extends Component {
   render() {
     return (
@@ -25,7 +32,6 @@ class App extends Component {
     );
   }
 }
-
 
 
 export default App;
