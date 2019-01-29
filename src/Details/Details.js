@@ -4,7 +4,7 @@ import React, {
 import {
     Link, Redirect 
 } from 'react-router-dom';
-import getTechnologies from '../getTechnologies'
+import getTechnologies from '../frontend/getTechnologies'
 import './Details.css';
 
 export default class Details extends Component {
