@@ -11,12 +11,13 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all nodemon src/backend/app",
+    "start-frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "start-backend": "nodemon src/backend/app",
-    "start-all": "npm-run-all -p start start-backend"
+    "start-dev": "npm-run-all -p start start-backend"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
