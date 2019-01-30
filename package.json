@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start-backend": "node src/backend/app",
+    "start-backend": "nodemon src/backend/app",
     "start-dev": "npm-run-all -p start start-backend"
   },
   "devDependencies": {
