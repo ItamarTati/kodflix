@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 3001
 const getShows = require('./shows');
+const path = require('path');
 
 app.get('/rest/shows', (req, res) => res.send(getShows()))
 app.get('/', (req, res) => res.send('Hello World!'))

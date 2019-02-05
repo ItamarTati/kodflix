@@ -11,7 +11,7 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "npm-run-all node src/backend/app",
+    "start": "npm-run-all build start-backend",
     "start-frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
