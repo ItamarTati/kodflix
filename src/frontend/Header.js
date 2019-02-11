@@ -15,7 +15,7 @@ export default class Header extends Component {
                     <div className="centered">
                         <h1>Welcome to the World of Animeflix</h1>
                         <a href="#technologies">
-                            <button  className="myButton">Enter a realm of where your limitations are your imagination</button>
+                            <button  className="myButton">Enter a realm where your imagination is your limitation</button>
                         </a>
                     </div>   
                 </div>
