@@ -5,6 +5,7 @@ import Details from './Details/Details.js';
 import NotFound from './NotFound';
 
 
+
 import './App.css';
 
   fetch('/rest/shows')
@@ -17,11 +18,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
+      
       <Router>
-        <div className="App">
-          
-          <Switch>
-          <Route exact path='/' component={Technologies} /> 
+        <div className="App">   
+        
+          <Switch> 
+          <Route exact path='/' component={Technologies} />
           <Route exact path='/not-found' component={NotFound} />
           <Route exact path='/:technologyId' component={Details} />
           </Switch>
