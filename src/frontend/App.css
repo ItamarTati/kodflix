@@ -143,11 +143,11 @@ body {
     position:relative;
     top:1px;
   }
-#technologies { 
+#animes { 
   background: #F8F8FF;
 }
 
-#technologies .container {
+#animes .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   height: 100%;
@@ -156,7 +156,7 @@ body {
   position: absolute;
 }
 
-#technologies .item {
+#animes .item {
   flex: 1; 
   flex-basis: 350px;
   border: 0px solid rgb(14, 27, 14); 
@@ -164,7 +164,7 @@ body {
   overflow: hidden; 
 }
 
-#technologies img {
+#animes img {
   border: 1px solid black;
   border-radius: 4px;
   padding: 5px;
@@ -173,7 +173,7 @@ body {
 }
 
 
-#technologies .overlay{
+#animes .overlay{
   transition: bottom ease 1s; 
   position: absolute;
   bottom: -100px;
@@ -183,14 +183,14 @@ body {
   opacity: .6; 
 }
 
-#technologies .item:hover .overlay {
+#animes .item:hover .overlay {
   opacity: .6;
   bottom: 0; 
 }
 
 
 @media only screen and (max-width: 600px){
-#technologies .container {
+#animes .container {
   flex-direction: column; 
 } 
 }

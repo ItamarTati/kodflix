@@ -15,7 +15,7 @@ export default class Header extends Component {
                     </video>
                     <div className="centered">
                         <h1>Welcome to the World of Animeflix</h1>
-                        <a href="#technologies">
+                        <a href="#animes">
                             <button  className="myButton">Enter a realm where your imagination is your limitation</button>
                         </a>
                     </div>   

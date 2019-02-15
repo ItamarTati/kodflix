@@ -13,7 +13,7 @@ export default function Technologies() {
             </div>
             
                 
-            <section id='technologies'>
+            <section id='animes'>
                 <div className = 'container'>
                 {
                     getTechnologies().map(stack => 
