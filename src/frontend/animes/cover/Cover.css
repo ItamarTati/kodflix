@@ -1,0 +1,42 @@
+
+.cover img {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    width: 95%;
+    height: 95%;
+}
+.cover-overlay {
+    transition: bottom ease 1s; 
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%; 
+    background-color: white;
+    opacity: .6; 
+  }
+  
+  .cover:hover .cover-overlay {
+    opacity: .6;
+    bottom: 0; 
+  }
+
+  .cover h1{
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+  }
+ 

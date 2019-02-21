@@ -1,56 +1,56 @@
-import React, {
-    Component
-} from 'react'
+import React from 'react';
 import {
     Link, Redirect 
 } from 'react-router-dom';
-import getTechnologies from '../getTechnologies'
 import './Details.css';
 
-export default class Details extends Component {
+export default class Details extends React.Component {
 
     constructor() {
         super();
-        this.state = {
-            technology: {}
-        };
-
-
-
+        this.state = { show: {} };
     }
 
     componentDidMount() {
-        let technologyId = this.props.match.params.technologyId;
-        let technology = getTechnologies()
-            .find((technology) => technology.id === technologyId);
-        this.setState({
-            technology
-        });
+        fetch('/rest/shows')
+            .then(response => response.json())
+            .then(shows => {
+                let showId = this.props.match.params.showId;
+                let show = shows.find(show => show.id === showId);
+                this.setState({ show });
+            });
     }
 
     render() {
-        if(this.state.technology === undefined){
+        let show = this.state.show;
+        if (show) {
+            return show.id ?
+                <DetailsContent show={show} /> :
+                <div />;
+        } else {
             return <Redirect to='/not-found' />;
         }
-        else {
-
-        return ( 
-        <div className = 'Details'>
-            <h1>{this.state.technology.name}</h1> 
-            
-                <div className='content'>
-                <div className='text'> 
-                    {this.state.technology.details}</div> 
-                <img
-                    className = 'image' 
-                    src={this.state.technology.logo}
-                    alt={this.state.technology.name} /> 
-                <div className='link'>
-                <Link to = '/' >Back to home page </Link> 
-                </div>
-                </div>
-        </div>
-            );
-        }
     }
+}
+
+function DetailsContent({ show }) {
+    return (
+        <div className='details'>
+            <h1>{show.title}</h1>
+            <div className='content'>
+                <div className='synopsis'>
+                   <p>{show.synopsis}</p> 
+                </div>
+                <div className='cover'>
+                    <img
+                        src={require(`../common/images/${show.id}.jpg`)}
+                        alt={show.title} />
+                </div>
+                    <div className='link'>
+                        <Link to = '/' >Back to home page</Link> 
+                    </div>
+                
+            </div>
+        </div>
+    )
 }
