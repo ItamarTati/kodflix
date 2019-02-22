@@ -1,6 +1,6 @@
 import React from 'react';
 import './Animes.css';
-import Cover from './cover/Cover';
+import Posters from './posters/Posters';
 
 export default class Animes extends React.Component {
 
@@ -20,7 +20,7 @@ export default class Animes extends React.Component {
             <div className='animes'>{
                 this.state.shows.map(show => {
                     return (
-                        <Cover key={show.id} id={show.id} title={show.title} />
+                        <Posters key={show.id} id={show.id} title={show.title} />
                     );
                 })
             }

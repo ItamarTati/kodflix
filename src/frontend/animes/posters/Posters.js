@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Cover.css';
+import './Posters.css';
 
-export default class Cover extends React.Component {
+export default class Posters extends React.Component {
 
     render() {
         let { id, title } = this.props;
         return (
-            <Link to={`/${id}`} className='cover'>
+            <Link to={`/${id}`} className='posters'>
                 <img src={require(`../../images/${id}.jpg`)} alt={title} />
-                <div className='cover-overlay'><h1>{title}</h1></div>
+                <div className='posters-overlay'><h1>{title}</h1></div>
             </Link>
         )
     }

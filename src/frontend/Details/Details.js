@@ -41,7 +41,7 @@ function DetailsContent({ show }) {
                 <div className='synopsis'>
                    <p>{show.synopsis}</p> 
                 </div>
-                <div className='cover'>
+                <div className='posters'>
                     <img
                         src={require(`../images/${show.id}.jpg`)}
                         alt={show.title} />

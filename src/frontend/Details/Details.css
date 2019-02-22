@@ -8,7 +8,7 @@
     width:50%; 
     display: inline-block
 }
-.cover{
+.posters{
     width:50%; 
     display: inline-block
 }
@@ -26,11 +26,11 @@
     display: block;
 }
 .details .content .synopsis,
-.details .content .cover {
+.details .content .posters {
     padding: 15px;
   
 }
-.cover {
+.posters {
     width: 100%;
     height: 100%; 
 }

@@ -1,12 +1,12 @@
 
-.cover img {
+.posters img {
     border: 1px solid black;
     border-radius: 4px;
     padding: 5px;
     width: 95%;
     height: 95%;
 }
-.cover-overlay {
+.posters-overlay {
     transition: bottom ease 1s; 
     position: absolute;
     bottom: -100px;
@@ -16,12 +16,12 @@
     opacity: .6; 
   }
   
-  .cover:hover .cover-overlay {
+  .posters:hover .posters-overlay {
     opacity: .6;
     bottom: 0; 
   }
 
-  .cover h1{
+  .posters h1{
     display: block;
     font-size: 2em;
     margin-top: 0.67em;
