@@ -43,7 +43,7 @@ function DetailsContent({ show }) {
                 </div>
                 <div className='cover'>
                     <img
-                        src={require(`../common/images/${show.id}.jpg`)}
+                        src={require(`../images/${show.id}.jpg`)}
                         alt={show.title} />
                 </div>
                     <div className='link'>

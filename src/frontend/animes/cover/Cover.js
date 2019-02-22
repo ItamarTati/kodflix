@@ -8,7 +8,7 @@ export default class Cover extends React.Component {
         let { id, title } = this.props;
         return (
             <Link to={`/${id}`} className='cover'>
-                <img src={require(`../../common/images/${id}.jpg`)} alt={title} />
+                <img src={require(`../../images/${id}.jpg`)} alt={title} />
                 <div className='cover-overlay'><h1>{title}</h1></div>
             </Link>
         )
