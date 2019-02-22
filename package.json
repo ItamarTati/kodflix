@@ -16,13 +16,13 @@
     "react-youtube-background": "^0.1.4"
   },
   "scripts": {
-    "start": "npm-run-all build start-backend",
-    "start-frontend": "react-scripts start",
+    "start": "npm-run-all -s build _start-backend",
+    "start-dev": "npm-run-all -p _start-frontend _start-backend",
+    "_start-frontend": "react-scripts start",
+    "_start-backend": "nodemon src/backend/app.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "start-backend": "nodemon src/backend/app",
-    "start-dev": "npm-run-all -p start start-backend"
+    "eject": "react-scripts eject"
   },
   "devDependencies": {}
 }
