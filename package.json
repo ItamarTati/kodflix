@@ -1,12 +1,9 @@
+
 {
   "name": "kodflix",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "/rest/*": {
-      "target": "http://localhost:3001"
-    }
-  },
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "express": "^4.16.4",
     "react": "^16.4.2",
@@ -20,10 +17,11 @@
     "start": "npm-run-all build start-backend",
     "start-frontend": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start-backend": "nodemon src/backend/App.js",
-    "start-dev": "npm-run-all -p start-frontend start-backend"
+    "start-backend": "nodemon src/backend/app",
+    "start-dev": "npm-run-all -p start start-backend"
   },
-  "devDependencies": {}
+  "devDependencies": {
+  }
 }
