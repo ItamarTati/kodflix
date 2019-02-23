@@ -15,6 +15,7 @@ export default class Animes extends React.Component {
             .then(shows => this.setState({ shows }));
     }
 
+
     render() {
         return (
             <div className='animes'>{
