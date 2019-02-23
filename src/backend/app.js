@@ -7,10 +7,10 @@ const getShows = require('./shows');
 app.get('/rest/shows', (req, res) => res.send(getShows()));
 
 
-app.use(express.static(path.join(__dirname, '../../build')));
+app.use(express.static(path.join(__dirname, '../build')));
 
 app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname, '../../build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
