@@ -11,7 +11,7 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "nodemon src/backend/app.js",
+    "start": "npm-run-all -s build _start-backend",
     "start-dev": "npm-run-all -p _start-frontend _start-backend",
     "_start-frontend": "react-scripts start",
     "_start-backend": "nodemon src/backend/app.js",
