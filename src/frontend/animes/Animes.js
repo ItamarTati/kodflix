@@ -1,6 +1,8 @@
 import React from 'react';
 import './Animes.css';
 import Posters from './posters/Posters';
+import Loading from '../loading/Loading';
+
 
 export default class Animes extends React.Component {
 
@@ -19,11 +21,14 @@ export default class Animes extends React.Component {
     render() {
         return (
             <div className='animes'>{
-                this.state.shows.map(show => {
-                    return (
-                        <Posters key={show.id} id={show.id} title={show.title} />
-                    );
-                })
+                this.state.shows.length ?
+                    this.state.shows.map(show => {
+                        return (
+                            <Posters key={show.id} id={show.id} title={show.title} />
+                        );
+                    }) : 
+                    <Loading />
+
             }
             </div>
         );
